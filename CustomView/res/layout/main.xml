@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.android.customview"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <com.example.android.customview.MieChart
+        android:id="@+id/Mie"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        custom:schiessmichtot="100dp" />
+
+    <Button
+        android:id="@+id/Left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/left" />
+
+    <Button
+        android:id="@+id/Rite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rite" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_button" />
+
+</LinearLayout>
